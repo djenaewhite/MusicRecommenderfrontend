@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        spotify: {
-          black: "#121212",
-          dark: "#181818",
-          green: "#1DB954",
+        border: "hsl(var(--border))",
+        background: "hsl(var(--bg))",
+        foreground: "hsl(var(--text))",
+        primary: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-border))",
         },
       },
     },
